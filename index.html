@@ -572,31 +572,28 @@
 
             <div class="row text-center"> <!-- contact form outer row with centered text-->
                 <div class="col-md-10 col-md-offset-1"> <!-- col 10 with offset 1 to centered -->
-                <form id="contact-form" class="form" name="sentMessage"  method="POST" action="https://formspree.io/jesuszerpaeconomia@gmail.com" target="_blank" > <!-- form wrapper -->
+                <form id="contact-form" class="form" name="sentMessage" novalidate method="POST" action="https://formspree.io/jesuszerpaeconomia@gmail.com" target="_blank" > <!-- form wrapper -->
              
                         <div class="row"> <!-- nested inner row -->
 
                             <!-- Input your name -->
                             <div class="col-md-4">
                                 <div class="form-group"> <!-- Your name input -->
-                                    <input type="text" autocomplete="off" class="form-control" placeholder="Tu nombre *" id="name" required data-validation-required-message="Por favor ingresa tu nombre.">
-                                    <p class="help-block text-danger"></p>
+                                   <input class="form-control" type="text" name="name" placeholder="Nombre" required="required"/>
                                 </div>
                             </div>
 
                             <!-- Input your email -->
                             <div class="col-md-4">
                                 <div class="form-group"> <!-- Your email input -->
-                                    <input type="email" autocomplete="off" class="form-control" placeholder="Tu Email *" id="email" required data-validation-required-message="Por favor ingresa tu correo.">
-                                    <p class="help-block text-danger"></p>
+                                     <input class="form-control" type="email" name="_replyto" placeholder="E-mail" required="required"/>
                                 </div>
                             </div>
 
                             <!-- Input your Phone no. -->
                             <div class="col-md-4">
                                 <div class="form-group"> <!-- Your email input -->
-                                    <input type="text" autocomplete="off" class="form-control" placeholder="Tu número telefónico *" id="phone" required data-validation-required-message="Por favor ingresa tu número telefónico.">
-                                    <p class="help-block text-danger"></p>
+                                    <input class="form-control" type="phone" name="_replyto" placeholder="Teléfono" required="required"/>
                                 </div>
                             </div>
 
@@ -604,8 +601,8 @@
 
                         <!-- Message Text area -->
                         <div class="form-group"> <!-- Your email input -->
-                            <textarea class="form-control" rows="7" placeholder="Escribe un mensaje..." id="message" required data-validation-required-message="Por favor escribe un mensaje"></textarea>
-                            <p class="help-block text-danger"></p>
+                            <textarea class="form-control" rows="7" placeholder="Escribe un mensaje..." name="message" required= "required"></textarea>
+                            
                             <div id="success"></div>
                         </div>
                         <button type="submit" class="btn btn-primary btn color">Enviar mensaje</button> <!-- Send button -->
