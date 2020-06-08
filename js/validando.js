@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $('#btnSend').click(function(){
+    $('#btn btn-primary btn color').click(function(){
 
         var errores = '';
 
@@ -40,7 +40,7 @@ $(document).ready(function(){
                                     '<div class="mensaje_modal">'+
                                         '<h3>Errores encontrados</h3>'+
                                         errores+
-                                        '<span id="btnClose">Cerrar</span>'+
+                                        '<span id="btn btn-primary btn color close">Cerrar</span>'+
                                     '</div>'+
                                 '</div>'
 
