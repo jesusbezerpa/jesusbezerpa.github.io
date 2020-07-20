@@ -1322,24 +1322,63 @@ p.help-block.text-danger ul li {
     margin-bottom: 10px;
 }
 /* Footer */
-#footer {
-    padding: 35px 0 10px;
-    background-color: #333;
-    color: #ffffff;
+footer.footer-section {
+    background: rgba(0, 0, 0, 0) url("https://jesusbezerpa.github.io/img/portfolio/model/footer.webp") no-repeat scroll left top / cover;
+    padding: 60px 0 50px;
 }
-ul.social li a i {
-    font-size: 18px;
-    background: transparent;
-    width: 32px;
-    height: 32px;
-    padding: 7px 0;
-    text-align: center;
-    border-top-left-radius: 0;
-    border: 1px solid transparent;
-    color: #ffffff;
-    transition: all 0.5s;
+.bg-with-black {
+    position: relative;
 }
-ul.social li a i:hover { border-color: #ffffff }
+.footer-top-section {
+    margin: 0 0 47px;
+}
+.single-fta > img {
+    margin: 0 0 7px;
+}
+.single-fta ul.fta-list {
+    list-style: outside none none;
+    padding-left: 0;
+}
+.single-fta ul.fta-list li, .single-fta ul.fta-list li a {
+    color: #e5e5e5;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 36px;
+}
+.single-fta ul.fta-list {
+    list-style: outside none none;
+    padding-left: 0;
+}
+.fta-title {
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 0 0 20px;
+}
+
+.fba-links {
+    text-align: right;
+}
+
+.fba-links ul li a {
+    color: #e5e5e5;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+.fba-links ul {
+    list-style: outside none none;
+    padding: 0;
+}
+.fba-links ul li {
+    display: inline-block;
+    margin-left: 28px;
+}
+.fba-copyright p {
+    color: #aaaaaa;
+    line-height: 30px;
+}
 /* Blog Page */
 .blog .media.post {
     background: #fff;
