@@ -923,7 +923,65 @@ ul.cat li a.active {
 @media only screen and (max-width:990px){
     .serviceBox{ margin: 25px 0 50px; }
 }
- 
+.btn-3d {
+  padding: .6rem 1rem;
+  border: 1px solid #1800f0;
+  border-radius: 4px;
+  background-color: #1800f0;
+  color: #fff;
+
+  font-size: 1.5rem;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+  box-shadow: 0 1px 0 rgba(255,255,255,.5) inset,
+    0 1px 3px rgba(0,0,0,.2);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#00a2ff),to(#1800f0));
+  background-image: linear-gradient(#00a2ff 10%,#1800f0 100%);
+}
+
+.btn-3d:hover, .btn-3d:focus {
+  background-color: #e0811b;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#1800f0),to(#00a2ff));
+  background-image: linear-gradient(#1800f0 10%,#00a2ff 100%);
+}
+
+.btn-3d:active {
+  background-color: #cf6a00;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.2) inset;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#1800f0),to(#00a2ff));
+  background-image: linear-gradient(#1800f0 10%,#00a2ff 100%);
+}
+
+.tex-parrafo { color: #000000
+;}
+
+
+.fa,
+.fas {
+  font-family: 'FontAwesome';
+}
+
+.social-icon {
+  color: #fff;
+  background: #221B14;
+  font-size: 1em;
+  border-radius: 50%;
+  line-height: 2.2em;
+  width: 2.1em;
+  height: 2.1em;
+  text-align: center;
+  display: inline-block;
+}
+
+li:hover {
+  transform: translateY(-4px);
+  transition: 0.3s;
+}
+
+/* This is to center the icons on JSFiddle only. Don't use this code */
+.social-links {
+  margin: 0 auto;
+  padding: 3rem 0;
+}
  
 /* experience Section */
 #experience { padding: 60px 0 }
