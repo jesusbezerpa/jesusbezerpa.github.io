@@ -952,7 +952,7 @@ ul.cat li a.active {
 }
 
 .tex-parrafo { color: #7f7f7f
-;}
+; font-weight: normal;}
 
 
 .fa,
