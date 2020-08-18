@@ -1658,6 +1658,50 @@ p.help-block.text-danger ul li {
     background-color: #ddab15;
     border-color: #ddab15;
 }
+/*-- blog --*/
+
+h6.text-h6h {
+    color: #efb14f;
+    font-size: 30px;
+}
+
+.modal-title {
+    color: #efb14f;
+    padding: 0px 15px;
+    font-size: 22px;
+}
+
+/*-- model --*/
+
+button.btn.btn-primary.user-color {
+    margin: 0;
+    width: 120px;
+}
+
+.model-image img {
+    width: 100%;
+}
+
+.model-content {
+    padding: 0 15px;
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
+
+h5.model-content-h5 {
+    font-size: 25px;
+    color: red;
+    margin: 15px 0;
+}
+
+.blog-img img {
+    width: 100%;
+}
+
+/*-- //model --*/
+
+/*-- //blog --*/
+
 /* Sidebar */
 .widget {
     margin-bottom: 40px;
