@@ -374,6 +374,7 @@ h4.media-heading {
     top: 0;
     width: 100%;
     }
+	
 /* About Us */
 #about {
     background: #38A5DB;
@@ -1790,3 +1791,32 @@ ul.meta-tags li:last-child:after { content: ' ' }
 .comment form { margin-top: -30px }
 .comment input,
 .comment textarea { margin-bottom: 15px }
+/*-- video section --*/
+
+.video-w3l {
+    background: rgba(0, 0, 0, 0.28);
+    min-height: 180px;
+    text-align: center;
+    padding: 5em;
+}
+
+.video-w3l h2 {
+    color: #fff;
+    font-size: 45px;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 70%;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding-top: 60px;
+    text-shadow: 6px 4px 2px rgba(10, 10, 10, 0.78);
+}
+
+.video-w3l i {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/*-- //video section --*/
