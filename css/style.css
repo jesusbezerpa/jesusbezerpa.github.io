@@ -952,10 +952,10 @@ ul.cat li a.active {
   background-image: linear-gradient(#1800f0 10%,#00a2ff 100%);
 }
 
-#nuevo { padding: 60px 0 ; background-color: #fff; color: #909090; font-weight:  normal; font-style: normal;}
-.tex-parrafo { color:#8f8f8f
-; font-weight:  normal; font-style: normal;
- font-family:'Lato', sans-serif;}
+#nuevo { padding: 60px 0 ; background-color: #fff; color: #000000; font-weight:  300; font-style: normal;}
+.tex-parrafo { color:#000000
+; font-weight:  300; font-style: normal;
+ font-family:'Lato', sans-serif; text-align: justify;  font-size: 17px;}
 
 
 .fa,
