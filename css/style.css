@@ -1568,7 +1568,7 @@ p.help-block.text-danger ul li {
 .w3l-footer-22-main #movetop {
   position: fixed;
   bottom: 12px;
-  right: 15px;
+  left: 15px;
   z-index: 99;
   font-size: 16px;
   border: none;
