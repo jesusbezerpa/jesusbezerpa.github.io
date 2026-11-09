@@ -433,12 +433,12 @@
         `- **4. Acompañamiento a Junta Directiva:** Presentación de escenarios macroeconómicos, transferencia de herramientas y seguimiento continuo de KPIs.`;
     }
 
-    if (hasAny(q, ['aliados', 'equipo', 'leonel', 'betzi', 'belkys', 'riwil', 'multidisciplinario'])) {
+    if (hasAny(q, ['aliados', 'equipo', 'leonel', 'betzi', 'belkys', 'astrid', 'multidisciplinario'])) {
       return `**Red de Aliados Estratégicos de ${PROFILE.name}:**\n\n` +
         `- **Leonel Valdespino (*Consultor Empresarial*):** Estrategia, procesos, planificación financiera y fiscal para América Latina.\n` +
         `- **Betzi Pacheco (*Asesora Contable y Financiera*):** Gestión contable, normativa tributaria y estructuración de estados financieros.\n` +
         `- **Belkys Velasco (*Especialista en Riesgos y Seguros*):** Análisis y prevención de riesgos patrimoniales y operativos.\n` +
-        `- **Riwil Fuentes (*Planificación Estratégica*):** Dirección de equipos de alto desempeño y control de gestión organizacional.\n\n` +
+        `- **Astrid Mora (*Administración y Gestión Empresarial*):** Administración corporativa, gestión de procesos, planificación estratégica y orientación al logro de resultados.\n\n` +
         `Puedes ver el detalle en la sección [Aliados Estratégicos](index.html#aliados).`;
     }
 
