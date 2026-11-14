@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /.env
+Disallow: /scratch/
 
 Sitemap: https://jesusbezerpa.github.io/sitemap.xml

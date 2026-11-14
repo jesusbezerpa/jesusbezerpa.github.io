@@ -1,0 +1,22 @@
+# Environment & API Credentials Vault (NEVER COMMIT)
+.env
+.env.*
+*.env
+*.key
+*.pem
+*.p12
+*.pfx
+*.secret
+secrets.*
+credentials.*
+.vercel/
+
+# Restricted Documents & Temporary Files
+Curriculum.pdf
+Ref.pdf
+*.backup.html
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db
+scratch/

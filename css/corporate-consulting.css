@@ -22,6 +22,8 @@
   --corporate-blue-hover: #0747a6;
   --corporate-blue-soft: #eff6ff;
   --corporate-navy: #091e42;
+  --brand-gold: #B8955A;
+  --brand-gold-light: #D9C29A;
   --tech-cyan: #0284c7;
   --tech-cyan-soft: #f0f9ff;
   --quant-emerald: #059669;
@@ -134,10 +136,15 @@ button {
   box-shadow: var(--shadow-sm);
 }
 
+.site-header .site-container {
+  max-width: 1360px;
+}
+
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.9rem;
   height: 70px;
 }
 
@@ -146,6 +153,8 @@ button {
   align-items: center;
   gap: 0.85rem;
   text-decoration: none;
+  margin-right: auto;
+  flex-shrink: 0;
 }
 
 .brand-avatar {
@@ -185,13 +194,13 @@ button {
 .nav-desktop {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 0.9rem;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1.15rem;
+  gap: 0.9rem;
   list-style: none;
 }
 
@@ -2585,3 +2594,254 @@ button {
     height: 75vh;
   }
 }
+
+/* ==========================================================================
+   2026 Ecosystem Visual Cohesion: Champagne Gold Accents & Quantum "Asistente" Orb
+   ========================================================================== */
+
+.brand-avatar {
+  border: 2px solid #B8955A !important;
+  box-shadow: 0 0 0 3px rgba(184, 149, 90, 0.16), var(--shadow-xs) !important;
+}
+
+.site-footer {
+  border-top: 3px solid #B8955A !important;
+}
+
+.footer-col-title {
+  position: relative;
+  padding-bottom: 0.45rem;
+}
+
+.footer-col-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 28px;
+  height: 2px;
+  background: linear-gradient(90deg, #B8955A 0%, #0052cc 100%);
+  border-radius: 2px;
+}
+
+@keyframes jzOrbSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes jzOrbSpinReverse {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+@keyframes jzHaloPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.38), 0 0 22px rgba(184, 149, 90, 0.45), 0 10px 26px rgba(7, 18, 36, 0.65);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(56, 189, 248, 0), 0 0 32px rgba(56, 189, 248, 0.6), 0 12px 30px rgba(7, 18, 36, 0.75);
+  }
+}
+@keyframes jzDotBlink {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.45; transform: scale(0.85); }
+}
+
+.copilot-launcher-btn.jz-futuristic-orb,
+.jz-futuristic-orb {
+  position: fixed !important;
+  bottom: 26px !important;
+  right: 24px !important;
+  width: 68px !important;
+  height: 68px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  background: radial-gradient(circle at 32% 28%, #1e3a6d 0%, #0B1B33 62%, #061020 100%) !important;
+  border: 2px solid #B8955A !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  z-index: 10000 !important;
+  animation: jzHaloPulse 3.2s infinite ease-in-out !important;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s ease !important;
+  user-select: none;
+  overflow: visible !important;
+}
+
+.copilot-launcher-btn.jz-futuristic-orb:hover,
+.jz-futuristic-orb:hover {
+  transform: translateY(-4px) scale(1.06) !important;
+  border-color: #38BDF8 !important;
+}
+
+.jz-futuristic-orb::before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 1.5px dashed rgba(56, 189, 248, 0.65);
+  animation: jzOrbSpin 14s linear infinite;
+  pointer-events: none;
+}
+
+.jz-futuristic-orb::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  border: 1px solid rgba(217, 194, 154, 0.38);
+  border-top-color: #38BDF8;
+  border-bottom-color: #B8955A;
+  animation: jzOrbSpinReverse 9s linear infinite;
+  pointer-events: none;
+}
+
+.jz-futuristic-orb .jz-orb-svg {
+  width: 38px !important;
+  height: 38px !important;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.55));
+  fill: none;
+}
+
+.jz-orb-status-dot {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #10B981;
+  border: 2px solid #0B1B33;
+  box-shadow: 0 0 8px #10B981;
+  z-index: 4;
+  animation: jzDotBlink 2s infinite ease-in-out;
+}
+
+.jz-orb-pill {
+  position: absolute;
+  right: 78px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, rgba(11, 27, 51, 0.96) 0%, rgba(22, 50, 89, 0.96) 100%);
+  border: 1px solid rgba(184, 149, 90, 0.85);
+  color: #FFFFFF;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+  box-shadow: 0 6px 18px rgba(7, 18, 36, 0.42);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.jz-orb-pill-kicker {
+  color: #38BDF8;
+  font-weight: 800;
+}
+
+@media (max-width: 576px) {
+  .jz-orb-pill {
+    display: none;
+  }
+}
+
+/* === JBZ CORPORATE EXECUTIVE LOGO (TOP-RIGHT NAVBAR) === */
+.site-header .site-container {
+  max-width: 1400px;
+}
+
+.site-header .header-inner {
+  gap: 0.7rem;
+}
+
+.site-header .nav-desktop {
+  gap: 0.7rem;
+}
+
+.site-header .nav-links {
+  gap: 0.7rem;
+}
+
+.site-header .nav-item a {
+  font-size: 0.87rem;
+  white-space: nowrap;
+}
+
+.site-header .social-links {
+  padding-left: 0.7rem;
+  gap: 0.35rem;
+}
+
+.jbz-nav-logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 0.15rem;
+  border-radius: 9px;
+  text-decoration: none;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.jbz-nav-logo:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(11, 27, 51, 0.22);
+}
+
+.jbz-nav-logo img {
+  display: block;
+  height: 36px;
+  width: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 1240px) and (min-width: 769px) {
+  .brand-title {
+    display: none;
+  }
+  .nav-links {
+    gap: 0.7rem;
+  }
+  .nav-item a {
+    font-size: 0.82rem;
+  }
+  .social-links {
+    padding-left: 0.75rem;
+    gap: 0.4rem;
+  }
+  .jbz-nav-logo img {
+    height: 34px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .social-links {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-toggle-btn {
+    order: 2;
+  }
+  .jbz-nav-logo {
+    order: 3;
+    margin-left: 0.25rem;
+  }
+  .jbz-nav-logo img {
+    height: 32px;
+  }
+  .brand-title {
+    display: none;
+  }
+  .brand-name {
+    font-size: 0.96rem;
+  }
+}
+

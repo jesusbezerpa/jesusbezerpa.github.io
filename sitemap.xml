@@ -1,33 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://jesusbezerpa.github.io/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://jesusbezerpa.github.io/img/servicios/Jesus-benjamin-zerpa.jpg</image:loc>
+      <image:title>Consultoría Financiera Corporativa y Business Intelligence — Jesús Benjamín Zerpa (Jesús Zerpa)</image:title>
+      <image:caption>Servicios de planificación financiera, presupuesto maestro, proyectos CAPEX y Business Intelligence liderados por Jesús Benjamín Zerpa (Jesús Zerpa).</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jesusbezerpa.github.io/img/jesus-zerpa-profile.jpg</image:loc>
+      <image:title>Jesús Benjamín Zerpa (Jesús Zerpa) — Economista y Consultor Financiero</image:title>
+      <image:caption>Retrato profesional de Jesús Benjamín Zerpa (Jesús Zerpa), Economista y Quantitative Data Scientist.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jesusbezerpa.github.io/asesoria-de-empresas-planificacion-financiera.html</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jesusbezerpa.github.io/img/servicios/asesores-de-empresas-planificacion-financiera.jpg</image:loc>
+      <image:title>Asesoría Financiera de Empresas y Presupuesto Maestro — Jesús Benjamín Zerpa (Jesús Zerpa)</image:title>
+      <image:caption>Consultoría en planificación financiera corporativa, presupuesto maestro y flujo de caja por Jesús Benjamín Zerpa (Jesús Zerpa).</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jesusbezerpa.github.io/evaluacion-y-formulacion-de-proyectos-de-inversion.html</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jesusbezerpa.github.io/img/servicios/Formulacion-y-evaluacion-de-proyectos-de-inversion.jpg</image:loc>
+      <image:title>Formulación y Evaluación de Proyectos de Inversión (CAPEX) — Jesús Benjamín Zerpa (Jesús Zerpa)</image:title>
+      <image:caption>Estudios de factibilidad comercial, técnica y económica (VAN, TIR, Payback) por Jesús Benjamín Zerpa (Jesús Zerpa).</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jesusbezerpa.github.io/freelance-gestion-de-proyectos.html</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jesusbezerpa.github.io/img/servicios/administracion-de-proyectos-freelance.jpg</image:loc>
+      <image:title>Gestión de Proyectos y Control de Costes (PMBOK / EVM) — Jesús Benjamín Zerpa (Jesús Zerpa)</image:title>
+      <image:caption>Consultoría en dirección de proyectos, control presupuestario y Valor Ganado (EVM) por Jesús Benjamín Zerpa (Jesús Zerpa).</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jesusbezerpa.github.io/inteligencia-empresarial-business-intelligence.html</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jesusbezerpa.github.io/img/servicios/Inteligencia-de-negocio.webp</image:loc>
+      <image:title>Consultoría en Business Intelligence, Power BI e Inteligencia Financiera — Jesús Benjamín Zerpa (Jesús Zerpa)</image:title>
+      <image:caption>Cuadros de mando financieros en Power BI, Excel/VBA, analítica en Python y RStudio por Jesús Benjamín Zerpa (Jesús Zerpa).</image:caption>
+    </image:image>
   </url>
 </urlset>
