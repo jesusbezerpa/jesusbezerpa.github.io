@@ -1133,7 +1133,7 @@
       `- **WhatsApp / Teléfono:** [${CONTACT.phone}](${CONTACT.whatsapp})\n` +
       `- **Formulario Protegido Anti-Bot:** [Abrir sección de contacto](index.html#contact)\n` +
       `- **Portafolio de 19 Estudios Cuantitativos:** [jesusbz.github.io](${CONTACT.portfolioSite})\n` +
-      `- **Sistemas de Ejecución Algorítmica Cripto (SHA-256):** [Explorar Estudio #19](${CONTACT.portfolioSite}bot-trading-python/#sec-certificacion)\n` +
+      `- **Sistemas de Ejecución Algorítmica Cripto (SHA-256):** [Explorar Estudio #19](${CONTACT.portfolioSite}bot-trading-python/)\n` +
       `- **Simulador Interactivo FP&A:** [Nexus Quant FP&A](${CONTACT.portfolioSite}FinancialDashboard.htm)\n` +
       `- **Currículum Web Ejecutivo (CV):** [jesusbzerpa.github.io](${CONTACT.cvSite})\n` +
       `- **LinkedIn:** [Perfil ejecutivo](${CONTACT.linkedin})`;
@@ -1199,7 +1199,7 @@
 
     if (hasAny(q, ['ejemplos reales', 'portafolio cuantitativo', 'modelos publicados', 'bot de trading', 'bots de trading', 'multibot', 'multi-bot', 'sha-256', 'sec-certificacion', 'okx', 'bybit', 'var(8)', 'var 8', 'diebold', 'yilmaz', 'granger', 'johansen', 'spillover', 'pytorch', 'lstm', 'garch', 'markowitz', 'monte carlo', 'cholesky', 'merton', 'simulador', 'fpa', '16 modelos', '17 modelos', '18 estudios', '19 estudios'])) {
       return `Puedes explorar la evidencia técnica reproducible de **${PROFILE.name}** en su **Portafolio de 19 Estudios Cuantitativos** ([jesusbz.github.io](${CONTACT.portfolioSite})), incluyendo:\n` +
-        `- **Sistemas de Ejecución Algorítmica y Optimización de Carteras Cripto en Python (#19, Nov 2026):** Evaluación walk-forward a 5 años (Markowitz SLSQP, GJR-GARCH, Min-CVaR 95%, MLP) y cuatro algoritmos sistemáticos con verificación SHA-256 sobre OKX API v5 y Bybit API v5 — [Ver Estudio #19](${CONTACT.portfolioSite}bot-trading-python/#sec-certificacion)\n` +
+        `- **Sistemas de Ejecución Algorítmica y Optimización de Carteras Cripto en Python (#19, Nov 2026):** Evaluación walk-forward a 5 años (Markowitz SLSQP, GJR-GARCH, Min-CVaR 95%, MLP) y cuatro algoritmos sistemáticos con verificación SHA-256 sobre OKX API v5 y Bybit API v5 — [Ver Estudio #19](${CONTACT.portfolioSite}bot-trading-python/)\n` +
         `- **Vectores Autorregresivos VAR(8), Granger & Diebold-Yilmaz en Python (#17, Nov 2026):** 4,240 sesiones S&P 500, Johansen r=0, TSI=44.89% (COVID 71.99%) y Cobertura MCoP-VAR ($22,481.92, Sharpe 0.845, Max DD -13.32%) — [Ver Estudio #17](${CONTACT.portfolioSite}vectores-autorregresivos-var-python.html) y su [edición VAR(p) en RStudio (#18)](${CONTACT.portfolioSite}trading-vectores-autoregresivos-en-rstudio.html)\n` +
         `- **Monte Carlo Multivariante (Cholesky 6D + Salto-Difusión de Merton, Nov 2026):** Evaluación fuera de muestra 2020–2026 ($10k → $23,381, +133.8%, P55.82%), proyección 10Y P50 $54,715, VaR 95% $22,178 y -80.26% reducción de varianza antitética — [Ver Estudio #16](${CONTACT.portfolioSite}simulacion-monte-carlo-portafolios-python.html)\n` +
         `- **Riesgo de Cola AR(1)-EGARCH(2,1) + VaR/CVaR en Python (Oct 2026):** 4,425 sesiones BTC (2014–2026), CVaR 99% diario -6.96% y Backtesting Kupiec p=0.45 (Basilea III/IV) — [Ver Estudio #15](${CONTACT.portfolioSite}volatilidad-garch-var-cvar-python.html)\n` +
@@ -1285,7 +1285,7 @@
 
     return activeHeader +
       `PERFIL: ${PROFILE.name} — ${PROFILE.title} (+15 años de amplia experiencia, sólidas fortalezas en FP&A, +14 empresas/filiales, 40% ahorro viáticos, 90% áreas riesgo, 85% inflación, 3 divisiones BI, 9 refs LinkedIn, 4 aliados incl. Astrid Mora).\n` +
-      `PLATAFORMAS Y PORTAFOLIO: Consultoría https://jesusbezerpa.github.io/ | Portafolio 19 estudios ${CONTACT.portfolioSite} (destacados: #19 Sistemas de Ejecución Algorítmica y Carteras Cripto en Python SHA-256 bot-trading-python/#sec-certificacion, #17 VAR(8) Diebold-Yilmaz 44.89% Python vectores-autorregresivos-var-python.html, #18 VAR(p) RStudio trading-vectores-autoregresivos-en-rstudio.html, #16 Monte Carlo Cholesky/Merton simulacion-monte-carlo-portafolios-python.html, #15 EGARCH CVaR volatilidad-garch-var-cvar-python.html, #14 LSTM deep-portfolio-lstm-python.html, Simulador Nexus Quant 5 módulos FinancialDashboard.htm) | CV ${CONTACT.cvSite}.\n` +
+      `PLATAFORMAS Y PORTAFOLIO: Consultoría https://jesusbezerpa.github.io/ | Portafolio 19 estudios ${CONTACT.portfolioSite} (destacados: #19 Sistemas de Ejecución Algorítmica y Carteras Cripto en Python SHA-256 bot-trading-python/, #17 VAR(8) Diebold-Yilmaz 44.89% Python vectores-autorregresivos-var-python.html, #18 VAR(p) RStudio trading-vectores-autoregresivos-en-rstudio.html, #16 Monte Carlo Cholesky/Merton simulacion-monte-carlo-portafolios-python.html, #15 EGARCH CVaR volatilidad-garch-var-cvar-python.html, #14 LSTM deep-portfolio-lstm-python.html, Simulador Nexus Quant 5 módulos FinancialDashboard.htm) | CV ${CONTACT.cvSite}.\n` +
       `LÍNEAS DE SERVICIO RELEVANTES:\n${srvBlock}\n` +
       `CONTACTO: WhatsApp/Tel ${CONTACT.phone}, canal protegido en formulario, LinkedIn ${CONTACT.linkedin}.`;
   }
