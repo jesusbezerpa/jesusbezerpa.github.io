@@ -1324,7 +1324,7 @@ button {
 }
 
 .method-step-card::after {
-  content: "🔍 Clic para ampliar imagen y texto";
+  content: "Ampliar ficha e imagen";
   position: absolute;
   top: 0.85rem;
   right: 0.95rem;
