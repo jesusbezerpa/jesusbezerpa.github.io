@@ -20,3 +20,24 @@ Ref.pdf
 .DS_Store
 Thumbs.db
 scratch/
+
+# Security: Never commit API keys, credentials, or local environment secrets
+.env
+.env.*
+!.env.example
+.Renviron
+.httr-oauth
+*.pem
+*.key
+*secret*.json
+credentials.json
+
+# Bytecode, temporary logs, and legacy local build/office artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+_site/
+FinancialDashboard_archivos/
+*.xlsx
+*.xls
+live_execution.log

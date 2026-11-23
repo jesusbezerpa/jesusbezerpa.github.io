@@ -5,7 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self';" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()">
 
   <title>Consultoría Financiera, Proyectos CAPEX y BI | Jesús Benjamín Zerpa</title>
   <meta name="description" content="Consultoría corporativa por Jesús Benjamín Zerpa (Jesús Zerpa): Planificación Financiera (FP&amp;A), Presupuesto Maestro, Proyectos CAPEX, PMBOK y Power BI." />
@@ -34,16 +36,17 @@
   <meta name="twitter:image:alt" content="Consultoría Financiera Corporativa, Evaluación de Proyectos y Business Intelligence — Jesús Benjamín Zerpa" />
 
   <!-- Favicons -->
-  <link rel="icon" type="image/svg+xml" href="img/jbz-favicon.svg" />
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+  <link rel="icon" type="image/svg+xml" href="img/jbz-favicon.svg?v=20261115a" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/jbz-favicon-32.png?v=20261115a" />
+  <link rel="shortcut icon" href="favicon.ico?v=20261115a" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/jbz-apple-touch-icon.png?v=20261115a" />
 
   <!-- Google Fonts (HTTPS Secure) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/corporate-consulting.css?v=20261114f" />
+  <link rel="stylesheet" href="css/corporate-consulting.css?v=20261123b" />
 
   <!-- Google Analytics 4 (Unified Cross-Domain Ecosystem + Clean URL Bar) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9M6MYPFL3M"></script>
@@ -110,8 +113,7 @@
                        "jobTitle":  "Economista Senior, Gerente de Planificación Financiera (FP\u0026A) \u0026 Científico de Datos",
                        "url":  "https://jesusbzerpa.github.io/",
                        "image":  "https://jesusbezerpa.github.io/img/jesus-zerpa-profile.jpg",
-                       "email":  "mailto:JesusZerpaEconomia@gmail.com",
-                       "telephone":  "+58-424-1487870",
+"telephone":  "+58-424-1487870",
                        "address":  {
                                        "@type":  "PostalAddress",
                                        "addressLocality":  "Caracas",
@@ -141,6 +143,9 @@
                                           "Business Intelligence",
                                           "Microsoft Power BI",
                                           "Ciencia de Datos",
+                                          "Econometría Multivariante VAR(8)",
+                                          "Conectividad Diebold-Yilmaz & Granger",
+                                          "Simulación de Monte Carlo & LSTM",
                                           "Python",
                                           "RStudio"
                                       ],
@@ -241,7 +246,7 @@
                                                {
                                                    "position":  4,
                                                    "url":  "https://jesusbezerpa.github.io/inteligencia-empresarial-business-intelligence.html",
-                                                   "name":  "Consultoría en Inteligencia Empresarial (Business Intelligence \u0026 Power BI)",
+                                                   "name":  "Consultoría en Inteligencia Empresarial e Implementación de Business Intelligence",
                                                    "@type":  "ListItem"
                                                }
                                            ]
@@ -290,7 +295,7 @@
           <a href="https://t.me/jesusbz21" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Telegram">
             <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
           </a>
-          <a href="mailto:JesusZerpaEconomia@gmail.com" class="social-icon-btn" title="Correo Electrónico">
+          <a href="#contact" data-jbz-mail="link" class="social-icon-btn" title="Correo Electrónico">
             <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
           </a>
         </div>
@@ -300,9 +305,6 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
       </button>
 
-      <a href="index.html" class="jbz-nav-logo" aria-label="Jesús Benjamín Zerpa — Inicio">
-        <img src="img/jbz-logo.svg" alt="JBZ — Jesús Benjamín Zerpa" width="224" height="40" />
-      </a>
     </div>
 
     <div id="mobileNavDrawer" class="mobile-nav-drawer">
@@ -349,7 +351,7 @@
 
           <div class="hero-kpi-grid">
             <div class="hero-kpi-card">
-              <div class="hero-kpi-value">+14 Años</div>
+              <div class="hero-kpi-value">+15 Años</div>
               <div class="hero-kpi-label">Finanzas &amp; Presupuesto</div>
             </div>
             <div class="hero-kpi-card">
@@ -357,7 +359,7 @@
               <div class="hero-kpi-label">Consultoría Ejecutiva</div>
             </div>
             <div class="hero-kpi-card">
-              <div class="hero-kpi-value">15 Modelos</div>
+              <div class="hero-kpi-value">19+ Modelos</div>
               <div class="hero-kpi-label">R · Python · Power BI</div>
             </div>
             <div class="hero-kpi-card">
@@ -397,7 +399,7 @@
             </li>
             <li>
               <span class="dossier-check">✔</span>
-              <span><strong>Business Intelligence &amp; Ciencia de Datos:</strong> Arquitecturas analíticas en Power BI, econometría avanzada, Machine Learning y Deep Learning (LSTM).</span>
+              <span><strong>Business Intelligence &amp; Ciencia de Datos:</strong> Implementación de Business Intelligence, econometría avanzada, Machine Learning y Deep Learning (LSTM).</span>
             </li>
           </ul>
           <div class="dossier-badges-wrap">
@@ -466,7 +468,7 @@
             </div>
             <h3 class="service-card-title">Formulación y Evaluación de Proyectos de Inversión</h3>
             <p class="service-card-desc">
-              ¿Planeas poner en marcha un nuevo negocio, lanzar una línea de productos o solicitar financiamiento bancario e institucional? Evaluamos la viabilidad comercial, técnica y financiera de tu inversión antes de comprometer el capital.
+              ¿Planeas poner en marcha un nuevo negocio, lanzar una línea de productos o solicitar financiamiento bancario y del mercado de capitales? Evaluamos la viabilidad comercial, técnica y financiera de tu inversión antes de comprometer el capital.
             </p>
             <ul class="service-deliverables">
               <li>Estudio de Mercado: cuantificación de demanda insatisfecha, oferta, precios y canales</li>
@@ -558,7 +560,7 @@
       <div class="about-grid">
         <div class="about-bio-card">
           <p>
-            Soy <strong>Jesús Benjamín Zerpa</strong>, <strong>Economista</strong> respaldado por más de 14 años de amplia experiencia liderando áreas de <strong>Planificación Financiera, Presupuesto Maestro, Control de Gestión y Evaluación de Proyectos</strong> en los sectores bancario, medios de pago, farmacéutico, industrial, salud y seguridad tecnológica.
+            Soy <strong>Jesús Benjamín Zerpa</strong>, <strong>Economista</strong> respaldado por más de 15 años de amplia experiencia liderando áreas de <strong>Planificación Financiera, Presupuesto Maestro, Control de Gestión y Evaluación de Proyectos</strong> en los sectores bancario, medios de pago, farmacéutico, industrial, salud y seguridad tecnológica.
           </p>
           <p>
             A lo largo de mi carrera —incluyendo responsabilidades directivas como <strong>Gerente de Planificación Financiera y Presupuesto en Consorcio Credicard</strong>, <strong>Planificador Corporativo de Finanzas en Grupo Mistral</strong> y <strong>Coordinador Corporativo de Presupuesto y Control en Grupo Multimédica</strong>— he diseñado e implementado modelos presupuestarios multimoneda, cuadros de mando integrales y estudios de factibilidad nacional e internacional.
@@ -569,7 +571,7 @@
 
           <div class="hero-cta-group" style="margin-top:1.5rem;margin-bottom:0;">
             <a href="https://jesusbz.github.io/" target="_blank" rel="noopener noreferrer" class="btn-secondary-exec">
-              <span>Portafolio de 15 Modelos (jesusbz.github.io)</span>
+              <span>Portafolio de 19+ Modelos (jesusbz.github.io)</span>
             </a>
             <a href="https://jesusbzerpa.github.io/" target="_blank" rel="noopener noreferrer" class="btn-secondary-exec">
               <span>CV Ejecutivo Web (jesusbzerpa.github.io)</span>
@@ -633,15 +635,15 @@
   </section>
 
   <!-- =========================================================================
-       Dynamic Moving Carousel of All 15 Quantitative Models (#trabajos / #works)
+       Dynamic Moving Carousel of All 16 Quantitative Models (#trabajos / #works)
        ========================================================================= -->
   <section id="trabajos" class="posts-carousel-section" aria-label="Carrusel de Modelos y Estudios Cuantitativos">
     <div class="site-container" id="works">
       <div class="carousel-section-header">
         <div class="carousel-title-group">
           <span class="carousel-mini-badge">
-            <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:#0052cc;"></span>
-            Portafolio Técnico en Vivo · 15 Estudios Publicados
+            <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:#B8955A;"></span>
+            Portafolio Técnico en Vivo · 18 Estudios Publicados
           </span>
           <h2 class="carousel-section-title">Modelos Cuantitativos, Finanzas &amp; Ciencia de Datos</h2>
           <p class="carousel-section-desc">
@@ -660,15 +662,74 @@
 
       <div id="carouselViewport" class="carousel-viewport">
         <div id="carouselTrack" class="carousel-track">
-          <!-- #15 Volatility GARCH/VaR/CVaR Python -->
-          <a href="https://jesusbz.github.io/volatilidad-garch-var-cvar-python.html" target="_blank" rel="noopener noreferrer" class="carousel-card">
+          <a href="https://jesusbz.github.io/bot-trading-python/#sec-certificacion" target="_blank" rel="noopener noreferrer" class="carousel-card">
             <div class="carousel-card-img-wrap">
-              <img src="img/carrusel/trading-bitcoin.webp" alt="Volatilidad GARCH VaR CVaR Python" class="carousel-card-img" loading="lazy" />
-              <span class="carousel-card-badge">MODELO #15 · OCT 2026</span>
-              <span class="carousel-card-category-pill">✦ Optimizado con Gemini 4 Argon</span>
+              <img src="img/cards/post-19-bot-trading-cripto-python.webp?v=20261123b" alt="Suite Multi-Bot Cuantitativa de Trading Algorítmico 24/7 en Python con Certificación SHA-256 — Jesús Benjamín Zerpa" width="1200" height="675" class="carousel-card-img" loading="lazy" decoding="async" />
+              <span class="carousel-card-badge">MODELO #19 · EN VIVO 24/7</span>
+              <span class="carousel-card-category-pill">Python · Multi-Bot SHA-256</span>
             </div>
             <div class="carousel-card-body">
-              <h3 class="carousel-card-title">Volatilidad Asimétrica GARCH, VaR y Expected Shortfall (CVaR) del Bitcoin en Python</h3>
+              <h3 class="carousel-card-title">Suite Multi-Bot Cuantitativa de Trading 24/7 en Python con Cadena SHA-256</h3>
+              <div class="carousel-card-meta-row">
+                <span>OKX &amp; Bybit v5 · GJR-GARCH · MLP</span>
+                <span class="carousel-card-action">Abrir suite 24/7 →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://jesusbz.github.io/vectores-autorregresivos-var-python.html" target="_blank" rel="noopener noreferrer" class="carousel-card">
+            <div class="carousel-card-img-wrap">
+              <img src="img/cards/post-17-var-granger-spillover-python.webp?v=20261121b" alt="Vectores Autorregresivos VAR(8), Granger y Diebold-Yilmaz en Python (2010–2026) — Jesús Benjamín Zerpa" width="1200" height="675" class="carousel-card-img" loading="lazy" decoding="async" />
+              <span class="carousel-card-badge">MODELO #17 · NOV 2026</span>
+              <span class="carousel-card-category-pill">Econometría · VAR(8)</span>
+            </div>
+            <div class="carousel-card-body">
+              <h3 class="carousel-card-title">Vectores Autorregresivos VAR(8), Causalidad de Granger y Spillover Diebold-Yilmaz en Python</h3>
+              <div class="carousel-card-meta-row">
+                <span>Python · Johansen · GFEVD</span>
+                <span class="carousel-card-action">Abrir modelo →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://jesusbz.github.io/trading-vectores-autoregresivos-en-rstudio.html" target="_blank" rel="noopener noreferrer" class="carousel-card">
+            <div class="carousel-card-img-wrap">
+              <img src="img/cards/post-18-var-granger-rstudio.webp?v=20261121b" alt="Modelización Econométrica de Vectores Autorregresivos VAR(p) en RStudio — Jesús Benjamín Zerpa" width="1200" height="675" class="carousel-card-img" loading="lazy" decoding="async" />
+              <span class="carousel-card-badge">MODELO #18 · RSTUDIO</span>
+              <span class="carousel-card-category-pill">Econometría · vars</span>
+            </div>
+            <div class="carousel-card-body">
+              <h3 class="carousel-card-title">Modelización Econométrica de Vectores Autorregresivos VAR(p) en RStudio</h3>
+              <div class="carousel-card-meta-row">
+                <span>R 4.4+ · urca · IRF &amp; FEVD</span>
+                <span class="carousel-card-action">Abrir modelo →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://jesusbz.github.io/simulacion-monte-carlo-portafolios-python.html" target="_blank" rel="noopener noreferrer" class="carousel-card">
+            <div class="carousel-card-img-wrap">
+              <img src="img/cards/post-16-monte-carlo-cholesky-merton-python.webp?v=20261121b" alt="Simulación Estocástica de Monte Carlo Multivariante: Cholesky 6D y Salto-Difusión de Merton (2010–2036) — Jesús Benjamín Zerpa" width="1200" height="750" class="carousel-card-img" loading="lazy" decoding="async" />
+              <span class="carousel-card-badge">MODELO #16 · NOV 2026</span>
+              <span class="carousel-card-category-pill">Python · Cuantitativo</span>
+            </div>
+            <div class="carousel-card-body">
+              <h3 class="carousel-card-title">Simulación Estocástica de Monte Carlo Multivariante: Cholesky 6D y Salto-Difusión de Merton (2010–2036)</h3>
+              <div class="carousel-card-meta-row">
+                <span>Python · Cholesky · Merton</span>
+                <span class="carousel-card-action">Abrir modelo →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://jesusbz.github.io/volatilidad-garch-var-cvar-python.html" target="_blank" rel="noopener noreferrer" class="carousel-card">
+            <div class="carousel-card-img-wrap">
+              <img src="img/cards/post-15-volatilidad-egarch-var-cvar-bitcoin-python.webp?v=20261121b" alt="Volatilidad Asimétrica AR(1)-EGARCH(2,1), VaR y Expected Shortfall (CVaR) del Bitcoin en Python — Jesús Benjamín Zerpa" width="1200" height="750" class="carousel-card-img" loading="lazy" decoding="async" />
+              <span class="carousel-card-badge">MODELO #15 · OCT 2026</span>
+              <span class="carousel-card-category-pill">Riesgo Extremo</span>
+            </div>
+            <div class="carousel-card-body">
+              <h3 class="carousel-card-title">Volatilidad Asimétrica AR(1)-EGARCH(2,1), VaR y Expected Shortfall (CVaR) del Bitcoin en Python</h3>
               <div class="carousel-card-meta-row">
                 <span>Python · arch · Basilea</span>
                 <span class="carousel-card-action">Abrir modelo →</span>
@@ -676,12 +737,11 @@
             </div>
           </a>
 
-          <!-- #14 Deep Portfolio LSTM Python -->
           <a href="https://jesusbz.github.io/deep-portfolio-lstm-python.html" target="_blank" rel="noopener noreferrer" class="carousel-card">
             <div class="carousel-card-img-wrap">
-              <img src="img/carrusel/imagen-lstm-portafolio.webp" alt="Deep Portfolio LSTM Python" class="carousel-card-img" loading="lazy" />
+              <img src="img/cards/post-14-deep-portfolio-lstm-pytorch-python.webp?v=20261121b" alt="Deep Portfolio Optimization con Redes Neuronales LSTM en Python (Markowitz 2020–2026) — Jesús Benjamín Zerpa" width="1200" height="750" class="carousel-card-img" loading="lazy" decoding="async" />
               <span class="carousel-card-badge">MODELO #14 · OCT 2026</span>
-              <span class="carousel-card-category-pill">✦ Optimizado con Gemini 4 Argon</span>
+              <span class="carousel-card-category-pill">Deep Learning</span>
             </div>
             <div class="carousel-card-body">
               <h3 class="carousel-card-title">Deep Portfolio Optimization con Redes Neuronales LSTM en Python (Markowitz 2020–2026)</h3>
@@ -692,12 +752,11 @@
             </div>
           </a>
 
-          <!-- #4 Markowitz -->
           <a href="https://jesusbz.github.io/proyecto4.html" target="_blank" rel="noopener noreferrer" class="carousel-card">
             <div class="carousel-card-img-wrap">
-              <img src="img/carrusel/dia-4.webp" alt="Portafolios de Markowitz" class="carousel-card-img" loading="lazy" />
+              <img src="img/cards/post-04-portafolio-tangente-markowitz-rstudio.webp?v=20261121b" alt="Portafolios de Inversión: Portafolio Eficiente y Portafolio Tangente de Markowitz — Jesús Benjamín Zerpa" width="1200" height="750" class="carousel-card-img" loading="lazy" decoding="async" />
               <span class="carousel-card-badge">MODELO #04</span>
-              <span class="carousel-card-category-pill">Optimización de Carteras</span>
+              <span class="carousel-card-category-pill">Optimización Carteras</span>
             </div>
             <div class="carousel-card-body">
               <h3 class="carousel-card-title">Portafolios de Inversión: Portafolio Eficiente y Portafolio Tangente de Markowitz</h3>
@@ -708,42 +767,39 @@
             </div>
           </a>
 
-          <!-- #5 Evaluación de Proyectos Global Nutrition -->
           <a href="https://jesusbz.github.io/EvaluacionProyecto.html" target="_blank" rel="noopener noreferrer" class="carousel-card">
             <div class="carousel-card-img-wrap">
-              <img src="img/carrusel/dia-5.webp" alt="Evaluación de Proyectos Global Nutrition España" class="carousel-card-img" loading="lazy" />
+              <img src="img/cards/post-05-evaluacion-proyectos-inversion-capex.webp?v=20261121b" alt="Evaluación y Formulación de Proyectos de Inversión: Caso Global Nutrition España — Jesús Benjamín Zerpa" width="1200" height="750" class="carousel-card-img" loading="lazy" decoding="async" />
               <span class="carousel-card-badge">MODELO #05</span>
-              <span class="carousel-card-category-pill">Proyectos de Inversión</span>
+              <span class="carousel-card-category-pill">Proyectos CAPEX</span>
             </div>
             <div class="carousel-card-body">
               <h3 class="carousel-card-title">Evaluación y Formulación de Proyectos de Inversión: Caso Global Nutrition España</h3>
               <div class="carousel-card-meta-row">
-                <span>Factibilidad · CAPEX</span>
+                <span>Factibilidad · VAN · TIR</span>
                 <span class="carousel-card-action">Abrir modelo →</span>
               </div>
             </div>
           </a>
 
-          <!-- #6 Financial Dashboard -->
           <a href="https://jesusbz.github.io/Dashboard.html" target="_blank" rel="noopener noreferrer" class="carousel-card">
             <div class="carousel-card-img-wrap">
-              <img src="img/carrusel/dia-6.webp" alt="Financial Dashboard Corporativo" class="carousel-card-img" loading="lazy" />
+              <img src="img/cards/post-06-financial-dashboard-kpis-vba.webp?v=20261121b" alt="Financial Dashboard Corporativo Automatizado para Vicepresidencia de Finanzas — Jesús Benjamín Zerpa" width="1200" height="750" class="carousel-card-img" loading="lazy" decoding="async" />
               <span class="carousel-card-badge">MODELO #06</span>
               <span class="carousel-card-category-pill">Control de Gestión</span>
             </div>
             <div class="carousel-card-body">
               <h3 class="carousel-card-title">Financial Dashboard Corporativo Automatizado para Vicepresidencia de Finanzas</h3>
               <div class="carousel-card-meta-row">
-                <span>Excel · VBA · Power BI</span>
+                <span>Excel · VBA · Nexus FP&amp;A</span>
                 <span class="carousel-card-action">Abrir modelo →</span>
               </div>
             </div>
           </a>
 
-          <!-- #11 Power BI -->
           <a href="https://jesusbz.github.io/power-bi.html" target="_blank" rel="noopener noreferrer" class="carousel-card">
             <div class="carousel-card-img-wrap">
-              <img src="img/carrusel/dia-11.webp" alt="Power BI Business Intelligence" class="carousel-card-img" loading="lazy" />
+              <img src="img/cards/post-11-power-bi-inteligencia-negocios-dashboards.webp?v=20261121b" alt="Power BI: Arquitectura de Business Intelligence y Cuadros de Mando en Vivo — Jesús Benjamín Zerpa" width="1200" height="750" class="carousel-card-img" loading="lazy" decoding="async" />
               <span class="carousel-card-badge">MODELO #11</span>
               <span class="carousel-card-category-pill">Business Intelligence</span>
             </div>
@@ -756,10 +812,9 @@
             </div>
           </a>
 
-          <!-- #1 Modelo de Pronósticos de Ventas -->
           <a href="https://jesusbz.github.io/modelo-ventas.html" target="_blank" rel="noopener noreferrer" class="carousel-card">
             <div class="carousel-card-img-wrap">
-              <img src="img/carrusel/dia-1.webp" alt="Modelo de Pronósticos de Ventas" class="carousel-card-img" loading="lazy" />
+              <img src="img/cards/post-01-pronostico-ventas-sarima-rstudio.webp?v=20261121b" alt="Modelo de Pronósticos para Ventas en Volumen con Backtesting (SARIMA / ETS) — Jesús Benjamín Zerpa" width="1200" height="750" class="carousel-card-img" loading="lazy" decoding="async" />
               <span class="carousel-card-badge">MODELO #01</span>
               <span class="carousel-card-category-pill">Series Temporales</span>
             </div>
@@ -772,15 +827,14 @@
             </div>
           </a>
 
-          <!-- #12 Minería de Procesos -->
           <a href="https://jesusbz.github.io/analisis-de-procesos-comerciales-data-mining.html" target="_blank" rel="noopener noreferrer" class="carousel-card">
             <div class="carousel-card-img-wrap">
-              <img src="img/carrusel/data-mining.webp" alt="Minería de Procesos y Datos" class="carousel-card-img" loading="lazy" />
+              <img src="img/cards/post-12-process-mining-data-mining-bupar-rstudio.webp?v=20261121b" alt="Análisis de Procesos Comerciales y de Negocio en RStudio (Process &amp; Data Mining) — Jesús Benjamín Zerpa" width="1200" height="750" class="carousel-card-img" loading="lazy" decoding="async" />
               <span class="carousel-card-badge">MODELO #12</span>
-              <span class="carousel-card-category-pill">Process &amp; Data Mining</span>
+              <span class="carousel-card-category-pill">Process Mining</span>
             </div>
             <div class="carousel-card-body">
-              <h3 class="carousel-card-title">Análisis de Procesos Comerciales y de Negocio en RStudio (Process Mining)</h3>
+              <h3 class="carousel-card-title">Análisis de Procesos Comerciales y de Negocio en RStudio (Process &amp; Data Mining)</h3>
               <div class="carousel-card-meta-row">
                 <span>RStudio · Suite bupaR</span>
                 <span class="carousel-card-action">Abrir modelo →</span>
@@ -788,12 +842,11 @@
             </div>
           </a>
 
-          <!-- #10 Simulación Monte Carlo -->
           <a href="https://jesusbz.github.io/modelizacion-monte-carlo-portafolios.html" target="_blank" rel="noopener noreferrer" class="carousel-card">
             <div class="carousel-card-img-wrap">
-              <img src="img/carrusel/dia-10.webp" alt="Simulación Monte Carlo" class="carousel-card-img" loading="lazy" />
+              <img src="img/cards/post-10-simulacion-monte-carlo-carteras-rstudio.webp?v=20261121b" alt="Simulación Estocástica de Monte Carlo en la Gestión de Carteras de Inversión — Jesús Benjamín Zerpa" width="1200" height="750" class="carousel-card-img" loading="lazy" decoding="async" />
               <span class="carousel-card-badge">MODELO #10</span>
-              <span class="carousel-card-category-pill">Simulación Estocástica</span>
+              <span class="carousel-card-category-pill">Monte Carlo R</span>
             </div>
             <div class="carousel-card-body">
               <h3 class="carousel-card-title">Simulación Estocástica de Monte Carlo en la Gestión de Carteras de Inversión</h3>
@@ -804,17 +857,91 @@
             </div>
           </a>
 
-          <!-- #8 SIG Power Map 3D -->
           <a href="https://jesusbz.github.io/powermap.html" target="_blank" rel="noopener noreferrer" class="carousel-card">
             <div class="carousel-card-img-wrap">
-              <img src="img/carrusel/dia-8.webp" alt="Sistema Integrado Geográfico Power Map" class="carousel-card-img" loading="lazy" />
+              <img src="img/cards/post-08-sistema-geografico-sig-powermap-3d.webp?v=20261121b" alt="Sistema Integrado Geográfico (SIG) con Power Map 3D para Cadenas Retail — Jesús Benjamín Zerpa" width="1200" height="750" class="carousel-card-img" loading="lazy" decoding="async" />
               <span class="carousel-card-badge">MODELO #08</span>
-              <span class="carousel-card-category-pill">Análisis Geoespacial</span>
+              <span class="carousel-card-category-pill">Geomarketing 3D</span>
             </div>
             <div class="carousel-card-body">
               <h3 class="carousel-card-title">Sistema Integrado Geográfico (SIG) con Power Map 3D para Cadenas Retail</h3>
               <div class="carousel-card-meta-row">
-                <span>Power Map 3D · Geomarketing</span>
+                <span>Power Map 3D · SIG</span>
+                <span class="carousel-card-action">Abrir modelo →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://jesusbz.github.io/Proyecto2.html" target="_blank" rel="noopener noreferrer" class="carousel-card">
+            <div class="carousel-card-img-wrap">
+              <img src="img/cards/post-02-volatilidad-var-bitcoin-egarch-rstudio.webp?v=20261121b" alt="Modelización de Volatilidad Condicional eGARCH(2,1) y Valor en Riesgo (VaR) del Bitcoin — Jesús Benjamín Zerpa" width="1200" height="750" class="carousel-card-img" loading="lazy" decoding="async" />
+              <span class="carousel-card-badge">MODELO #02</span>
+              <span class="carousel-card-category-pill">Volatilidad eGARCH</span>
+            </div>
+            <div class="carousel-card-body">
+              <h3 class="carousel-card-title">Modelización de Volatilidad Condicional eGARCH(2,1) y Valor en Riesgo (VaR) del Bitcoin</h3>
+              <div class="carousel-card-meta-row">
+                <span>RStudio · rugarch · VaR</span>
+                <span class="carousel-card-action">Abrir modelo →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://jesusbz.github.io/proyecto3.html" target="_blank" rel="noopener noreferrer" class="carousel-card">
+            <div class="carousel-card-img-wrap">
+              <img src="img/cards/post-03-machine-learning-tidymodels-rstudio.webp?v=20261121b" alt="Ciencia de Datos y Aprendizaje Automático Supervisado para Demanda Urbana — Jesús Benjamín Zerpa" width="1200" height="750" class="carousel-card-img" loading="lazy" decoding="async" />
+              <span class="carousel-card-badge">MODELO #03</span>
+              <span class="carousel-card-category-pill">Machine Learning</span>
+            </div>
+            <div class="carousel-card-body">
+              <h3 class="carousel-card-title">Ciencia de Datos y Aprendizaje Automático Supervisado para Demanda Urbana</h3>
+              <div class="carousel-card-meta-row">
+                <span>RStudio · tidymodels</span>
+                <span class="carousel-card-action">Abrir modelo →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://jesusbz.github.io/proyecto7.html" target="_blank" rel="noopener noreferrer" class="carousel-card">
+            <div class="carousel-card-img-wrap">
+              <img src="img/cards/post-07-exploracion-macroeconomica-wdi-rstudio.webp?v=20261121b" alt="Exploración de Datos Macroeconómicos, Curva de Preston y Banco Mundial — Jesús Benjamín Zerpa" width="1200" height="750" class="carousel-card-img" loading="lazy" decoding="async" />
+              <span class="carousel-card-badge">MODELO #07</span>
+              <span class="carousel-card-category-pill">Macroeconomía WDI</span>
+            </div>
+            <div class="carousel-card-body">
+              <h3 class="carousel-card-title">Exploración de Datos Macroeconómicos, Curva de Preston y Banco Mundial</h3>
+              <div class="carousel-card-meta-row">
+                <span>RStudio · WDI · Plotly</span>
+                <span class="carousel-card-action">Abrir modelo →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://jesusbz.github.io/bitcoin-ether-pronosticos-con-prophet.html" target="_blank" rel="noopener noreferrer" class="carousel-card">
+            <div class="carousel-card-img-wrap">
+              <img src="img/cards/post-09-pronosticos-bitcoin-ether-prophet-rstudio.webp?v=20261121b" alt="Pronósticos Cuantitativos de Bitcoin (BTC) y Ether (ETH) con Facebook Prophet — Jesús Benjamín Zerpa" width="1200" height="750" class="carousel-card-img" loading="lazy" decoding="async" />
+              <span class="carousel-card-badge">MODELO #09</span>
+              <span class="carousel-card-category-pill">Prophet Bayesiano</span>
+            </div>
+            <div class="carousel-card-body">
+              <h3 class="carousel-card-title">Pronósticos Cuantitativos de Bitcoin (BTC) y Ether (ETH) con Facebook Prophet</h3>
+              <div class="carousel-card-meta-row">
+                <span>RStudio · Prophet · Dygraphs</span>
+                <span class="carousel-card-action">Abrir modelo →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://jesusbz.github.io/trading-medias-moviles-rstudio.html" target="_blank" rel="noopener noreferrer" class="carousel-card">
+            <div class="carousel-card-img-wrap">
+              <img src="img/cards/post-13-analisis-tecnico-bitcoin-quantmod-rstudio.webp?v=20261121b" alt="Bitcoin Trading en RStudio: Velas Japonesas, Bollinger, MACD y RSI(14) — Jesús Benjamín Zerpa" width="1200" height="750" class="carousel-card-img" loading="lazy" decoding="async" />
+              <span class="carousel-card-badge">MODELO #13</span>
+              <span class="carousel-card-category-pill">Trading Técnico</span>
+            </div>
+            <div class="carousel-card-body">
+              <h3 class="carousel-card-title">Bitcoin Trading en RStudio: Velas Japonesas, Bollinger, MACD y RSI(14)</h3>
+              <div class="carousel-card-meta-row">
+                <span>RStudio · quantmod · TTR</span>
                 <span class="carousel-card-action">Abrir modelo →</span>
               </div>
             </div>
@@ -833,7 +960,7 @@
         <span class="section-kicker">Carrera Corporativa</span>
         <h2 class="section-title">Trayectoria Profesional</h2>
         <p class="section-subtitle">
-          Más de 14 años de ejercicio continuo en instituciones financieras y grupos empresariales líderes en Venezuela, América Latina y proyectos para Europa.
+          Más de 15 años de ejercicio continuo en instituciones financieras y grupos empresariales líderes en Venezuela, América Latina y proyectos para Europa.
         </p>
       </div>
 
@@ -856,7 +983,7 @@
           </div>
           <div class="timeline-role">Consultor de Finanzas, Business Intelligence &amp; Machine Learning</div>
           <p class="timeline-desc">
-            Desarrollo de escenarios financieros y comerciales, planes de negocio, implementación de RStudio Server y arquitecturas de Business Intelligence en Power BI, así como modelos econométricos y de aprendizaje automático en R y Python.
+            Desarrollo de escenarios financieros y comerciales, planes de negocio, implementación de RStudio Server y proyectos de Implementación de Business Intelligence, así como modelos econométricos y de aprendizaje automático en R y Python.
           </p>
         </div>
 
@@ -1009,7 +1136,7 @@
                 </div>
                 <div>
                   <div class="contact-info-label">Correo Electrónico</div>
-                  <div class="contact-info-value"><a href="mailto:JesusZerpaEconomia@gmail.com">JesusZerpaEconomia@gmail.com</a></div>
+                  <div class="contact-info-value"><a href="#contact" data-jbz-mail="text">Contacto directo</a></div>
                 </div>
               </li>
               <li class="contact-info-item">
@@ -1040,7 +1167,7 @@
 
         <div class="contact-form-panel">
           <h3 style="font-size:1.25rem;font-weight:800;color:var(--corporate-navy);margin-bottom:1.15rem;">Envíame tu Consulta</h3>
-          <form action="https://formspree.io/jesuszerpaeconomia@gmail.com" method="POST" target="_blank" rel="noopener noreferrer">
+          <form action="#contact" data-secure-relay="formspree" method="POST" rel="noopener noreferrer">
             <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <div class="form-row-grid">
               <div class="form-field-group" style="margin-bottom:0;">
@@ -1126,7 +1253,7 @@
           <ul class="footer-links-list">
             <li><a href="https://www.linkedin.com/in/jes%C3%BAs-zerpa-807646129/" target="_blank" rel="noopener noreferrer">Perfil LinkedIn</a></li>
             <li><a href="https://github.com/JesusBZ" target="_blank" rel="noopener noreferrer">Repositorio GitHub</a></li>
-            <li><a href="mailto:jesuszerpaeconomia@gmail.com">jesuszerpaeconomia@gmail.com</a></li>
+            <li><a href="#contact" data-jbz-mail="text">Contacto directo</a></li>
             <li><a href="https://t.me/jesusbz21" target="_blank" rel="noopener noreferrer">Telegram @jesusbz21</a></li>
             <li><a href="https://wa.me/584241487870" target="_blank" rel="noopener noreferrer">WhatsApp +58 424 148 78 70</a></li>
             <li><a href="https://rpubs.com/JesusZ" target="_blank" rel="noopener noreferrer">RPubs</a></li>
@@ -1147,6 +1274,6 @@
   </button>
 
   <!-- Consulting Platform & Automated Gemini AI Assistant -->
-  <script src="js/consulting-app.js?v=20261114f" defer></script>
+  <script src="js/consulting-app.js?v=20261123b" defer></script>
 </body>
 </html>
